@@ -85,3 +85,51 @@ composer require --dev phpunit/phpunit ^10
 - Simple Case 1, Done
 
 </div>
+
+<div id="unit-testing-2">
+<h2>
+  Simple case 2: Calculator Testing
+</h2>
+
+- Create 2 PHP file; "Calculator.php" in src folder and "CalculatorTest.php" in tests folder
+- This is source code for Calculator.php:
+
+- This is source code for CalculatorTest.php:
+
+
+- Lets try test it: (To test all script inside folder tests)
+```
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+```
+- Lets try test it: (To test spesific script inside folder tests)
+```
+./vendor/bin/phpunit tests/CalculatorTest.php
+```
+- Simple Case 2, Done
+
+</div>
+
+<div id="unit-testing-3">
+<h2>
+  Simple case 3: Student Testing
+</h2>
+
+- Create 3 PHP file; "Student.php" and "Course.php" in src folder and "StudentTest.php" in tests folder
+- This is source code for Student.php:
+
+- This is source code for Course.php:
+
+- This is source code for StudentTest.php:
+
+
+- Lets try test it: (To test all script inside folder tests)
+```
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+```
+- Lets try test it: (To test spesific script inside folder tests)
+```
+./vendor/bin/phpunit tests/StudentTest.php
+```
+- Simple Case 3, Done
+
+</div>
