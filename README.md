@@ -24,7 +24,7 @@
 1. Prepare The Environment.
 2. Simple Case of Unit Testing.
 
-<div id="Install-Laravel">
+<div id="prepare-environment">
 <h2>
   Prepare The Environment
 </h2>
@@ -60,5 +60,28 @@ composer require --dev phpunit/phpunit ^10
   ![image](https://github.com/user-attachments/assets/cd3c0385-b0b8-49ff-aa67-d0a3f85b5e79)
 
 - Installation done, continue to unit testing case
+
+</div>
+
+<div id="unit-testing-1">
+<h2>
+  Simple case 1: User Testing
+</h2>
+
+- Create 2 PHP file; "User.php" in src folder and "UserTest.php" in tests folder
+- This is source code for User.php:
+
+- This is source code for UserTest.php:
+
+
+- Lets try test it: (To test all script inside folder tests)
+```
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+```
+- Lets try test it: (To test spesific script inside folder tests)
+```
+./vendor/bin/phpunit tests/UserTest.php
+```
+- Simple Case 1, Done
 
 </div>
