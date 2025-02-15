@@ -102,7 +102,7 @@ composer require --dev phpunit/phpunit ^10
 
 - This is source code for CalculatorTest.php:
 
-![image](https://github.com/user-attachments/assets/2123a712-e93b-4c42-b66e-3bca3c424e31)
+![image](https://github.com/user-attachments/assets/6412b3c7-a95f-4179-8249-5af983f9890e)
 
 - Lets try test it: (To test all script inside folder tests)
 ```
