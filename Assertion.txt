@@ -1,0 +1,171 @@
+1. Equality Assertions
+assertEquals($expected, $actual)
+Memeriksa apakah dua nilai sama (dengan perbandingan non-strict).
+
+assertNotEquals($expected, $actual)
+Memeriksa apakah dua nilai tidak sama.
+
+assertSame($expected, $actual)
+Memeriksa apakah dua nilai identik (dengan perbandingan strict, termasuk tipe data).
+
+assertNotSame($expected, $actual)
+Memeriksa apakah dua nilai tidak identik.
+
+2. Boolean Assertions
+assertTrue($condition)
+Memeriksa apakah kondisi benar (true).
+
+assertFalse($condition)
+Memeriksa apakah kondisi salah (false).
+
+assertNotTrue($condition)
+Memeriksa apakah kondisi bukan true.
+
+assertNotFalse($condition)
+Memeriksa apakah kondisi bukan false.
+
+3. Null & Empty Assertions
+assertNull($variable)
+Memeriksa apakah variabel null.
+
+assertNotNull($variable)
+Memeriksa apakah variabel tidak null.
+
+assertEmpty($variable)
+Memeriksa apakah variabel kosong (array kosong, string kosong, dll).
+
+assertNotEmpty($variable)
+Memeriksa apakah variabel tidak kosong.
+
+4. Type Assertions
+assertInstanceOf($expectedClass, $object)
+Memeriksa apakah objek merupakan instance dari kelas tertentu.
+
+assertNotInstanceOf($expectedClass, $object)
+Memeriksa apakah objek bukan instance dari kelas tertentu.
+
+assertIsArray($variable)
+Memeriksa apakah variabel adalah array.
+
+assertIsString($variable)
+Memeriksa apakah variabel adalah string.
+
+assertIsInt($variable)
+Memeriksa apakah variabel adalah integer.
+
+assertIsFloat($variable)
+Memeriksa apakah variabel adalah float.
+
+assertIsBool($variable)
+Memeriksa apakah variabel adalah boolean.
+
+assertIsCallable($variable)
+Memeriksa apakah variabel adalah callable.
+
+assertIsObject($variable)
+Memeriksa apakah variabel adalah object.
+
+assertIsResource($variable)
+Memeriksa apakah variabel adalah resource.
+
+5. String Assertions
+assertStringContainsString($needle, $haystack)
+Memeriksa apakah substring terdapat dalam string.
+
+assertStringNotContainsString($needle, $haystack)
+Memeriksa apakah substring tidak terdapat dalam string.
+
+assertStringStartsWith($prefix, $string)
+Memeriksa apakah string dimulai dengan prefix tertentu.
+
+assertStringEndsWith($suffix, $string)
+Memeriksa apakah string diakhiri dengan suffix tertentu.
+
+assertMatchesRegularExpression($pattern, $string)
+Memeriksa apakah string cocok dengan pola regex.
+
+6. Array Assertions
+assertCount($expectedCount, $array)
+Memeriksa apakah jumlah elemen dalam array sesuai.
+
+assertNotCount($expectedCount, $array)
+Memeriksa apakah jumlah elemen dalam array tidak sesuai.
+
+assertContains($needle, $haystack)
+Memeriksa apakah array mengandung elemen tertentu.
+
+assertNotContains($needle, $haystack)
+Memeriksa apakah array tidak mengandung elemen tertentu.
+
+assertArrayHasKey($key, $array)
+Memeriksa apakah array memiliki kunci tertentu.
+
+assertArrayNotHasKey($key, $array)
+Memeriksa apakah array tidak memiliki kunci tertentu.
+
+7. Exception & Error Assertions
+expectException($exceptionClass)
+Memeriksa apakah exception tertentu dilempar.
+
+expectExceptionMessage($message)
+Memeriksa apakah pesan exception sesuai.
+
+expectExceptionCode($code)
+Memeriksa apakah kode exception sesuai.
+
+assertThrows(fn() => function(), ExceptionClass::class)
+Memeriksa apakah fungsi melempar exception tertentu.
+
+8. File System Assertions
+assertFileExists($filename)
+Memeriksa apakah file ada.
+
+assertFileNotExists($filename)
+Memeriksa apakah file tidak ada.
+
+assertFileIsReadable($filename)
+Memeriksa apakah file bisa dibaca.
+
+assertFileIsWritable($filename)
+Memeriksa apakah file bisa ditulis.
+
+9. Performance Assertions
+assertLessThan($expected, $actual)
+Memeriksa apakah nilai lebih kecil dari ekspektasi.
+
+assertGreaterThan($expected, $actual)
+Memeriksa apakah nilai lebih besar dari ekspektasi.
+
+assertLessThanOrEqual($expected, $actual)
+Memeriksa apakah nilai kurang dari atau sama dengan ekspektasi.
+
+assertGreaterThanOrEqual($expected, $actual)
+Memeriksa apakah nilai lebih dari atau sama dengan ekspektasi.
+
+10. JSON & XML Assertions
+assertJson($string)
+Memeriksa apakah string adalah JSON valid.
+
+assertJsonStringEqualsJsonString($expectedJson, $actualJson)
+Memeriksa apakah dua string JSON sama.
+
+assertXmlStringEqualsXmlString($expectedXml, $actualXml)
+Memeriksa apakah dua string XML sama.
+
+public function testExampleAssertions() {
+    $this->assertEquals(5, 2 + 3);                // Equality assertion
+    $this->assertTrue(is_array([]));              // Boolean assertion
+    $this->assertNull(null);                      // Null assertion
+    $this->assertInstanceOf(DateTime::class, new DateTime()); // Type assertion
+    $this->assertStringContainsString('foo', 'foobar');       // String assertion
+    $this->assertArrayHasKey('key', ['key' => 'value']);      // Array assertion
+    $this->expectException(InvalidArgumentException::class);  // Exception assertion
+}
+
+
+
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+
+./vendor/bin/phpunit tests/CalculatorTest.php
+
+composer require --dev phpunit/phpunit ^10
