@@ -71,7 +71,11 @@ composer require --dev phpunit/phpunit ^10
 - Create 2 PHP file; "User.php" in src folder and "UserTest.php" in tests folder
 - This is source code for User.php:
 
+![image](https://github.com/user-attachments/assets/25f526df-4b9d-47e1-baa0-2eb3a9c5c18e)
+
 - This is source code for UserTest.php:
+
+![image](https://github.com/user-attachments/assets/2744d3f9-3aab-43e6-a99f-964e9ccf8319)
 
 
 - Lets try test it: (To test all script inside folder tests)
@@ -94,8 +98,11 @@ composer require --dev phpunit/phpunit ^10
 - Create 2 PHP file; "Calculator.php" in src folder and "CalculatorTest.php" in tests folder
 - This is source code for Calculator.php:
 
+![image](https://github.com/user-attachments/assets/4f775ece-ba4d-4901-970c-7b48b940ca2e)
+
 - This is source code for CalculatorTest.php:
 
+![image](https://github.com/user-attachments/assets/2123a712-e93b-4c42-b66e-3bca3c424e31)
 
 - Lets try test it: (To test all script inside folder tests)
 ```
@@ -117,10 +124,15 @@ composer require --dev phpunit/phpunit ^10
 - Create 3 PHP file; "Student.php" and "Course.php" in src folder and "StudentTest.php" in tests folder
 - This is source code for Student.php:
 
+![image](https://github.com/user-attachments/assets/70a56cc0-5474-4065-aacd-237d1af8df85)
+
 - This is source code for Course.php:
+
+![image](https://github.com/user-attachments/assets/2d13017e-6803-4e90-9126-727234a75417)
 
 - This is source code for StudentTest.php:
 
+![image](https://github.com/user-attachments/assets/311e9cce-1758-4068-9540-7926c90e4e99)
 
 - Lets try test it: (To test all script inside folder tests)
 ```
